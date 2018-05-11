@@ -4,7 +4,7 @@
     "name": "Sample PWA",
     "scope": "/",
     "display": "standalone",
-    "start_url": "http://127.0.0.1:8/",
+    "start_url": "https://aj-creations.github.io/Sample-PWA/",
     "short_name": "Sample PWA",
     "theme_color": "#ff0000",
     "description": "GroupinGer PWA for best experience",
