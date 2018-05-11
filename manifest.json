@@ -5,7 +5,7 @@
     "scope": "/",
     "display": "standalone",
     "start_url": "https://AJ-Creations.github.io/Sample-PWA/",
-    "short_name": "GroupinGer Lite",
+    "short_name": "Sample PWA",
     "theme_color": "#D71CFF",
     "description": "A Simple Sample For Progressive Web App.",
     "orientation": "portrait",
