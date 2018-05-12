@@ -6,10 +6,10 @@
     "display": "standalone",
     "start_url": "https://AJ-Creations.github.io/Sample-PWA/",
     "short_name": "Sample PWA",
-    "theme_color": "#D71CFF",
+    "theme_color": "#AC00FF",
     "description": "A Simple Sample For Progressive Web App.",
     "orientation": "portrait",
-    "background_color": "pick",
+    "background_color": "#AC00FF",
     "related_applications": [],
     "prefer_related_applications": false,
     "icons": [
