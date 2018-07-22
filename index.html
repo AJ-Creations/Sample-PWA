@@ -71,6 +71,7 @@
 			.catch(function(err){
 				$('.mainCard .content').html('Unknown error occured!<br>Do you have the internet connection ?');
 			});
+			var MDCSnackbar = mdc.snackbar.MDCSnackbar;
 			var snackbar = new MDCSnackbar(document.querySelector('.mdc-snackbar'));
 			function ShowSnackbar(message){
 				snackbar.show({
