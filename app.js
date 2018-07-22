@@ -8,7 +8,7 @@ document.querySelector('.menuToggle').addEventListener('click', () => drawer.ope
 if('serviceWorker' in navigator) {
 navigator.serviceWorker.register('/sw.js')
 .then(function() {
-	//alert('Service Worker Registered');
+	console.log('Service Worker Registered');
 })
 .catch(function(error){
 	alert(error);
