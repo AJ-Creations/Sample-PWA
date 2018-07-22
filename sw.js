@@ -1,9 +1,9 @@
 var cacheName = 'sample-pwa';
 var filesToCache = [
-/*'/Sample-PWA/',
+'/Sample-PWA/',
 '/Sample-PWA/index.html',
 '/Sample-PWA/styles.css',
-'/Sample-PWA/app.js'*/
+'/Sample-PWA/app.js'
 ];self.addEventListener('install', function(e) {
 console.log('[ServiceWorker] Install');
 e.waitUntil(
