@@ -38,7 +38,7 @@
 </table>
 <div class="mdc-card__actions">
 	<div class="mdc-card__action-buttons">
-	  <a href="tel:+919072644297" style="text-decoration: none;"><button class="mdc-button mdc-button--raised mdc-card__action mdc-card__action--button">Call</button></a>
-	  <a href="mailto:jishnuraj.rockz@gmail.com?Subject=Sample%20PWA%20GitHub%20Repository"  style="text-decoration: none;" target="_top"><button class="mdc-button mdc-button--raised mdc-card__action mdc-card__action--button">Action 2</button></a>
+	  <a href="tel:+919072644297" style="text-decoration: none;"><button class="mdc-button mdc-button--raised mdc-card__action mdc-card__action--button">Call Me</button></a>
+	  <a href="mailto:jishnuraj.rockz@gmail.com?Subject=Sample%20PWA%20GitHub%20Repository"  style="margin-left: 20px;text-decoration: none;" target="_top"><button class="mdc-button mdc-button--raised mdc-card__action mdc-card__action--button">Mail Me</button></a>
 	</div>
 </div>

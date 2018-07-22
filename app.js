@@ -6,7 +6,7 @@ document.querySelector('.menuToggle').addEventListener('click', () => drawer.ope
 
 
 if('serviceWorker' in navigator) {
-navigator.serviceWorker.register('/sw.js')
+navigator.serviceWorker.register('/Sample-PWA/sw.js')
 .then(function() {
 	console.log('Service Worker Registered');
 })
