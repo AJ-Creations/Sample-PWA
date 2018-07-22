@@ -22,9 +22,9 @@
 					<span class="mdc-top-app-bar__title">Sample PWA</span>
 				</section>
 				<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-					<a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Download" alt="Download">file_download</a>
-					<a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Print this page" alt="Print this page">print</a>
-					<a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Bookmark this page" alt="Bookmark this page">bookmark</a>
+					<a href="#" onclick="ShowSnackbar('TopAppBar Item 1');" class="material-icons mdc-top-app-bar__action-item" aria-label="Download" alt="Download">file_download</a>
+					<a href="#" onclick="ShowSnackbar('TopAppBar Item 2');" class="material-icons mdc-top-app-bar__action-item" aria-label="Print this page" alt="Print this page">print</a>
+					<a href="#" onclick="ShowSnackbar('TopAppBar Item 3');" class="material-icons mdc-top-app-bar__action-item" aria-label="Bookmark this page" alt="Bookmark this page">bookmark</a>
 				</section>
 			</div>
 		</header>
@@ -71,14 +71,16 @@
 			.catch(function(err){
 				$('.mainCard .content').html('Unknown error occured!<br>Do you have the internet connection ?');
 			});
-			const snackbar = new MDCSnackbar(document.querySelector('.mdc-snackbar'));
-			snackbar.show({
-  message: 'Something',
+			var snackbar = new MDCSnackbar(document.querySelector('.mdc-snackbar'));
+			function ShowSnackbar(message){
+				snackbar.show({
+  message: message,
   actionText: 'Undo',
   actionHandler: function () {
     console.log('my cool function');
   }
 });
+				}
 		</script>
 	</body>
 </html>
