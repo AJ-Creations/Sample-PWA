@@ -9,10 +9,6 @@ console.log('[ServiceWorker] Install');
 e.waitUntil(
 caches.open(cacheName).then(function(cache) {
 console.log('[ServiceWorker] Caching app shell');
-var request = new Request('https://fonts.googleapis.com/icon?family=Material+Icons', {mode: 'no-cors'});
-// Assume `cache` is an open instance of the Cache class.
-fetch(request).then(response => cache.put(request, response));
-
 return cache.addAll(filesToCache);
 })
 );
