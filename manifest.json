@@ -5,7 +5,7 @@
   "background_color": "#6200ED",
   "display": "standalone",
   "Scope": "/",
-  "start_url": "/",
+  "start_url": "/Sample-PWA/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
