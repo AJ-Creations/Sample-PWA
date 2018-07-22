@@ -3,7 +3,7 @@ $('.mainCard').css('top', $('.mdc-top-app-bar').height()+40);
 var drawer = new mdc.drawer.MDCTemporaryDrawer(document.querySelector('.mdc-drawer--temporary'));
 document.querySelector('.menuToggle').addEventListener('click', () => drawer.open = true);
 
-$.get('/mainCont.txt').then(function(data){
+$.get('/Sample-PWA/mainCont.txt').then(function(data){
 	$('.mainCard').html(data);
 	//alert(data);
 })
