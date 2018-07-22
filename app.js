@@ -13,7 +13,7 @@ $.get('/mainCont.txt').then(function(data){
 
 
 if('serviceWorker' in navigator) {
-navigator.serviceWorker.register('/sw.js')
+navigator.serviceWorker.register('/Sample-PWA/sw.js')
 .then(function() {
 	//alert('Service Worker Registered');
 })
