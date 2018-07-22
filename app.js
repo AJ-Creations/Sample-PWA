@@ -1,11 +1,23 @@
-//Register Service Worker
-if(navigator.serviceWorker.controller){
-  console.log('[PWA Logs] active service worker is found on this browser. no need to register');
-}
-else {
-  navigator.serviceWorker.register('sw.js', {
-    scope: './'
-  }).then(function(reg) {
-    console.log('Service worker has been registered for scope:'+ reg.scope);
-  });
+$('.headingCard').css('top', $('.mdc-top-app-bar').height()+20);
+$('.mainCard').css('top', $('.mdc-top-app-bar').height()+40);
+var drawer = new mdc.drawer.MDCTemporaryDrawer(document.querySelector('.mdc-drawer--temporary'));
+document.querySelector('.menuToggle').addEventListener('click', () => drawer.open = true);
+
+$.get('/mainCont.txt').then(function(data){
+	$('.mainCard').html(data);
+	//alert(data);
+})
+.catch(function(err){
+	$('.mainCard .content').html('Unknown error occured!<br>Do you have the internet connection ?');
+});
+
+
+if('serviceWorker' in navigator) {
+navigator.serviceWorker.register('/sw.js')
+.then(function() {
+	//alert('Service Worker Registered');
+})
+.catch(function(error){
+	alert(error);
+});
 }

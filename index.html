@@ -1,34 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>
-      PWA Demo
-    </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="theme-color" content="#AC00FF">
-    <link rel="manifest" href="/Sample-PWA/manifest.json">
-    <script src="app.js" charset="utf-8"></script>
-  </head>
-  <body>
-    <h1>
-      Sample Progressive Web App
-    </h1>
-    <hr>
-    <br>
-	    <p>
-	      This is a sample Progressive Web App.
-	      <br>
-	      The entire website is uploaded at <a href="https://github.com/AJ-Creations/Sample-PWA/" target="_blank">https://github.com/AJ-Creations/Sample-PWA/</a>.
-	      Features
-	      <ol>
-	      	<li>
-	      		a file named <b>offline.html</b>has been cashed so that everytime when visitors open this website without internet access,the offline page will be shown.
-	      	</li>
-	      	<br>
-	      	<li>
-	      		Ability to install the webapk directly from this WebApp.
-	      	</li>
-	     </ol>
-	   </p>
-  </body>
+	<head>
+		<title>Template</title>
+		<meta name="theme-color" content="#6200ED" />
+
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
+
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+		<link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" />
+
+		<link rel="stylesheet" href="styles.css" />
+		
+		<link rel="manifest" href="manifest.json">
+	</head>
+	<body>
+		<header class="mdc-top-app-bar">
+			<div class="mdc-top-app-bar__row">
+				<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+					<a href="#" class="material-icons mdc-top-app-bar__navigation-icon menuToggle">menu</a>
+					<span class="mdc-top-app-bar__title">Title</span>
+				</section>
+				<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+					<a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Download" alt="Download">file_download</a>
+					<a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Print this page" alt="Print this page">print</a>
+					<a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Bookmark this page" alt="Bookmark this page">bookmark</a>
+				</section>
+			</div>
+		</header>
+		<aside class="mdc-drawer mdc-drawer--temporary mdc-typography">
+			<nav class="mdc-drawer__drawer">
+				<header class="mdc-drawer__header">
+					<div class="mdc-drawer__header-content">Header here</div>
+				</header>
+				<nav id="icon-with-text-demo" class="mdc-drawer__content mdc-list">
+					<a class="mdc-list-item mdc-list-item--activated" href="#">
+						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>Home
+					</a>
+					<a class="mdc-list-item" href="#">
+						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">call</i>Contact Me!
+					</a>
+				</nav>
+			</nav>
+		</aside>
+		<div class="mdc-card headingCard" style="position: relative;">
+			<h1>Hello World!</h1>
+		</div>
+		<div class="mdc-card mainCard" style="position: relative;">
+			<div class="content">
+				Loading content...
+			</div>
+		</div>
+		<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="app.js"></script>
+	</body>
 </html>
