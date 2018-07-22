@@ -1,5 +1,5 @@
 <div class="mdc-card__media mdc-card__media--square" style="background-image: url('Developer-pic.png');">
-	<div class="mdc-card__media-content" style="font-size: 2em; color: #6200ED; text-shadow: 2px 2px 2px #000063;">Jishnu Raj</div>
+	<div class="mdc-card__media-content" style="font-size: 2em; color: #FF0088; text-shadow: 2px 2px 2px #BE3E82;">Jishnu Raj</div>
 </div>
 <!-- ... content ... -->
 <table>
