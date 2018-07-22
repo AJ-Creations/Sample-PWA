@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Sample PWA</title>
+		<title>Sample PWA - Contact Dev</title>
 		<meta name="theme-color" content="#6200ED" />
 
 		<meta name="viewport" content="width=device-width, user-scalable=no" />
@@ -34,19 +34,19 @@
 					<div class="mdc-drawer__header-content">Jishnu Raj</div>
 				</header>
 				<nav id="icon-with-text-demo" class="mdc-drawer__content mdc-list">
-					<a class="mdc-list-item mdc-list-item--activated" href="#">
+					<a class="mdc-list-item mdc-list-item--activated" href="/Sample-PWA/">
 						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>Home
 					</a>
-					<a class="mdc-list-item" href="/Sample-PWA/Contact.html">
+					<a class="mdc-list-item" href="#">
 						<i class="material-icons mdc-list-item__graphic" aria-hidden="true">call</i>Contact Me!
 					</a>
 				</nav>
 			</nav>
 		</aside>
 		<div class="mdc-card headingCard" style="position: relative;">
-			<h1>Hello World!</h1>
+			<h1>Contact Me</h1>
 		</div>
-		<div class="mdc-card mainCard" style="position: relative;">
+		<div class="mdc-card ContactCard" style="position: relative;">
 			<div class="content">
 				Loading content...
 			</div>
@@ -55,12 +55,12 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		<script src="app.js"></script>
 		<script>
-			$.get('/Sample-PWA/mainCont.txt').then(function(data){
-				$('.mainCard').html(data);
+			$.get('/Sample-PWA/ContactInfo.txt').then(function(data){
+				$('.ContactCard').html(data);
 				//alert(data);
 			})
 			.catch(function(err){
-				$('.mainCard .content').html('Unknown error occured!<br>Do you have the internet connection ?');
+				$('.ContactCard .content').html('Unknown error occured!<br>Do you have the internet connection ?');
 			});
 		</script>
 	</body>

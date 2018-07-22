@@ -1,0 +1,44 @@
+<div class="mdc-card__media mdc-card__media--square" style="background-image: url('Developer-pic.png');">
+	<div class="mdc-card__media-content">Jishnu Raj</div>
+</div>
+<!-- ... content ... -->
+<table>
+	<tr>
+		<td>
+			Name:
+		</td>
+		<td>
+			Jishnu Raj
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Date Of Birth:
+		</td>
+		<td>
+			8 July 2001
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Place:
+		</td>
+		<td>
+			Kozhikkode, Kerala, India
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Project:
+		</td>
+		<td>
+			Sample PWA
+		</td>
+	</tr>
+</table>
+<div class="mdc-card__actions">
+	<div class="mdc-card__action-buttons">
+	  <a href="tel:+919072644297" style="text-decoration: none;"><button class="mdc-button mdc-button--raised mdc-card__action mdc-card__action--button">Call</button></a>
+	  <a href="mailto:jishnuraj.rockz@gmail.com?Subject=Sample%20PWA%20GitHub%20Repository"  style="text-decoration: none;" target="_top"><button class="mdc-button mdc-button--raised mdc-card__action mdc-card__action--button">Action 2</button></a>
+	</div>
+</div>

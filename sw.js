@@ -1,9 +1,9 @@
-var cacheName = 'hello-world-page';
+var cacheName = 'sample-pwa';
 var filesToCache = [
-/*'/',
-'/index.html',
-'/styles.css',
-'/app.js'*/
+/*'/Sample-PWA/',
+'/Sample-PWA/index.html',
+'/Sample-PWA/styles.css',
+'/Sample-PWA/app.js'*/
 ];self.addEventListener('install', function(e) {
 console.log('[ServiceWorker] Install');
 e.waitUntil(

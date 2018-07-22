@@ -6,7 +6,7 @@ body{
 .headingCard{
 	margin: 10px;
 }
-.mainCard{
+.mainCard, .ContactCard{
 	margin: 10px;
 	padding: 10px;
 }
